@@ -1,2 +1,142 @@
 Entendendo o que é Git e sua importância
 
+Git != GitHub
+
+
+1 - Controle de Versão
+2 - Armazenamento em nuvem
+3 - Trabalho em equipe
+4 - Melhorar seu código
+5 - Reconhecimento
+
+Comandos básiscos de navegação no terminal
+
+-Mudar de Pastas
+
+-Listar as pastas
+
+-Criar pastas/arquivos
+
+-Deletor pastas/arquivos
+
+
+
+Windows 	X 		Unix
+
+cd 			- 		cd 		- Mudar diretório Ex.: cd/, cd.., cd PastaX
+dir 		- 		ls 		- Listar diretórios
+mkdir 		- 		mkdir	- Criar Diretório
+del/rmdir 	- 		rm-rf	- Apagar arquivo ou Pasta Ex.: del arq.txt, rmdir pastaX /s /q
+cls			- 		clear	- Limpar Tela (CTRL+L no Linux, atalho para 'clear')
+
+
+Alguns Conceitos do Git
+
+-SHA1
+
+É um algoritmo de encriptação.
+Security Hasj algorithm
+
+SHA-1 produz um valor de dispersão de 160 bits (20 bytes) conhecido como resumo da mensagem. Um valor de dispersão SHA-1 é normalmente tratado como um número hexadecimal de 40 dígitos.
+
+"É uma forma curta de representar o estado de um arquivo."
+
+-Objetos Fundamentais
+
+-Sistema Ditribuído
+-Segurança
+
+
+
+
+
+Comandos GIT BASH
+
+
+openssl sha1 teste.txt
+
+
+838d370305aa32f044d7e456fa1e6d5774f2e73e - Arquivo 1
+a8d2b588ed0ee27804769df5f602745abe54a24e - Arquivo 2 - Sem o ponto no fim do texto
+55bc020ce502b80ed541aa3f6624205abb8b04c8
+
+
+Objetos Internos do Git
+
+-Blobs
+echo 'conteudo' | git hash-object --stdin
+Devolve o "SHA1" do texto no comando echo
+
+echo -e 'blob 9\0conteudo' | openssl sha1
+
+-Trees
+Armazenam Blobs
+
+-Commits
+
+
+
+
+
+
+
+
+
+--------------------------
+
+-git init
+Inicia o git em si para os versionamentos
+
+ls -a // Lita arquivos ocultos
+
+Markdown
+Um tipo de arquivo similar ao HTML
+# refere-se ao <h1>, aumentando os ##, seriam os demais <h's>
+
+
+-git add
+git add *
+
+ 
+
+-git commit
+git commit -m "Primeiro commit seguindo o curso de bootstrap"
+
+
+-git status
+
+
+-git config --list
+Listar as configurações atuais do Git, como por exemplo, o nome e e-mail que estão atrelados aos commits
+
+Caso necessário alterar e-mail ou user vinculado, executar os comandos abaixo:
+
+remover:
+git config --global --unset user.email
+git config --global --unset user.nickname
+
+
+incluir:
+git config --global user.email "lrangon@lleoshuya.com.br"
+git config --global user.nickname "lrangon"
+
+
+
+
+Enviar arquivos do repositório local para o GitHub
+
+git remote add origin https://github.com/lleoshuya/livro-receitas.git
+git push origin master
+
+
+
+
+
+
+
+
+
+
+
+
+

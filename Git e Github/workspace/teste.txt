@@ -1,0 +1,3 @@
+SHA-1 produz um valor de dispersão de 160 bits (20 bytes) conhecido como resumo da mensagem. Um valor de dispersão SHA-1 é normalmente tratado como um número hexadecimal de 40 dígitos.
+
+"É uma forma curta de representar o estado de um arquivo."
