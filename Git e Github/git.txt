@@ -131,10 +131,14 @@ git push origin master
 
 
 
+Baixar arquivos do repositório no GitHub para o local
+
+git pull origin master
 
 
+Clonar repositórios
 
-
+git clone "enreço url do repositório a ser clonado"
 
 
 
