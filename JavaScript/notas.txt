@@ -1,0 +1,19 @@
+DOM - Document Object Model
+
+- JavaScript pode alterar todos os elementos do HTML
+- JavaScript pode alterar todos os atributos e estilos de CSS de uma página
+
+O JavaScript é dinamico em relação as variáveis.
+Por exemplo:
+
+var nome = "Leonardo" // É reconhecido como string devido as ""
+
+Para ver no navegador o que está sendo validado no JS, utilizar o comando abaixp:
+
+
+console.log (variavel);
+
+
+
+git remote add jslocal https://github.com/lleoshuya/JavaScript.git
+git push jslocal master
